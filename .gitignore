@@ -1,0 +1,32 @@
+# Visual Studio generated files
+.vs/
+out/
+x64/
+x86/
+Debug/
+Release/
+*.user
+*.suo
+*.db
+*.opensdf
+*.sdf
+*.ipch
+*.ap
+*.ncb
+
+# Compiled Object files
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Python (나중을 위해 미리 추가)
+__pycache__/
+*.pyc
+.env
+venv/
+.conda/
