@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="KeypilotHook/KeypilotHook.vcxproj" />
+  <Project Path="KeypilotHook/KeypilotHook.vcxproj" Id="cee5a368-93ca-4ece-99c5-9cb76be43841" />
 </Solution>

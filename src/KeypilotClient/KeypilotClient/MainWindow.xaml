@@ -1,0 +1,41 @@
+﻿<Window x:Class="KeypilotClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Keypilot Overlay" 
+        Height="250" Width="500"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        Left="100" Top="100">
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadow" Color="Black" BlurRadius="5" ShadowDepth="2" Opacity="0.8"/>
+    </Window.Resources>
+
+    <Grid>
+        <Border Background="#CC202020" CornerRadius="15" Padding="20">
+            <StackPanel VerticalAlignment="Center">
+
+                <TextBlock Text="Keypilot AI Connected" Foreground="#00FF00" FontWeight="Bold" HorizontalAlignment="Center" Effect="{StaticResource DropShadow}"/>
+
+                <!-- 1. 질문 입력창 -->
+                <TextBox Name="InputBox" Margin="0,10,0,0" Padding="5" Text="C++로 Hello World 짜줘"/>
+
+                <!-- 2. 전송 버튼 -->
+                <Button Content="AI에게 물어보기 (Send)" Margin="0,10,0,0" Padding="5" Click="Button_Click" Background="#444" Foreground="White"/>
+
+                <!-- 3. AI 답변 (고스트 텍스트) -->
+                <TextBlock Name="GhostText" 
+                           Text="..." 
+                           Foreground="#AAAAAA" 
+                           FontSize="14" 
+                           FontStyle="Italic" 
+                           TextWrapping="Wrap"
+                           Margin="0,15,0,0"
+                           Effect="{StaticResource DropShadow}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
