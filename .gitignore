@@ -1,32 +1,57 @@
-# Visual Studio generated files
+# =========================
+# C# / .NET (WPF)
+# =========================
+[Bb]in/
+[Oo]bj/
+.config
+*.user
+*.suo
+*.userprefs
+
+# =========================
+# C++ / Visual Studio
+# =========================
 .vs/
 out/
+build/
 x64/
 x86/
 Debug/
 Release/
-*.user
-*.suo
-*.db
-*.opensdf
-*.sdf
 *.ipch
 *.ap
 *.ncb
+*.opensdf
+*.sdf
+*.db
 
-# Compiled Object files
-*.obj
+# Compiled binary files (exclude from git, keep dlls if they are external libs)
+*.exe
 *.pdb
 *.idb
 *.ilk
-*.exe
-*.dll
-*.lib
-*.exp
+# *.dll  <-- 외부 라이브러리 DLL은 포함해야 할 수 있으므로 주석 처리하거나, 빌드 산출물만 무시하도록 관리 필요
 
-# Python (나중을 위해 미리 추가)
+# =========================
+# Python (AI Engine)
+# =========================
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
+.Python
+env/
 venv/
-.conda/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+.ipynb_checkpoints/
+
+# =========================
+# Models & Large Files
+# =========================
+*.gguf
+*.bin
+*.pth
+*.pt
