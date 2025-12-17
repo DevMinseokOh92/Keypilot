@@ -1,4 +1,12 @@
 # =========================
+# General / IDE Settings
+# =========================
+.vs/
+.vscode/
+.idea/
+*.log
+
+# =========================
 # C# / .NET (WPF)
 # =========================
 [Bb]in/
@@ -7,11 +15,11 @@
 *.user
 *.suo
 *.userprefs
+*.generated.cs
 
 # =========================
-# C++ / Visual Studio
+# C++ / Visual Studio (Native DLL)
 # =========================
-.vs/
 out/
 build/
 x64/
@@ -24,16 +32,19 @@ Release/
 *.opensdf
 *.sdf
 *.db
+*.tlog
 
-# Compiled binary files (exclude from git, keep dlls if they are external libs)
+# Compiled binary files (직접 빌드하는 파일들이니 Git에 올리지 않음)
 *.exe
 *.pdb
 *.idb
 *.ilk
-# *.dll  <-- 외부 라이브러리 DLL은 포함해야 할 수 있으므로 주석 처리하거나, 빌드 산출물만 무시하도록 관리 필요
+*.dll
+*.lib
+*.exp
 
 # =========================
-# Python (AI Engine)
+# Python (AI Backend)
 # =========================
 __pycache__/
 *.pyc
@@ -43,15 +54,19 @@ __pycache__/
 env/
 venv/
 .venv/
+keypilot_env/
 pip-log.txt
-pip-delete-this-directory.txt
 .env
 .ipynb_checkpoints/
 
 # =========================
-# Models & Large Files
+# AI Models & Large Files (절대 업로드 금지)
 # =========================
+models/
 *.gguf
 *.bin
 *.pth
 *.pt
+*.safetensors
+*.ckpt
+*.onnx
